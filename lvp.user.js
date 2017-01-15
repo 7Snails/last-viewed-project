@@ -22,6 +22,11 @@ if (currentURL.includes("scratch.mit.edu/projects/") === true) {
 var ID = currentURL.substring(33, currentURL.length - 1);
 $.ajax({
           type: "PUT",
+          url: "https://scratch.mit.edu/site-api/projects/in/" + studio + "/remove/?pks=" + ID
+});
+
+$.ajax({
+          type: "PUT",
           url: "https://scratch.mit.edu/site-api/projects/in/" + studio + "/add/?pks=" + ID
 });
 }

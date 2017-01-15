@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         Latest Viewed Project
 // @namespace    http://scratch.mit.edu/user/7Snails
-// @version      1.0
+// @version      1.3
 // @description  Adds your latest viewed project to a studio
 // @author       @7Snails
 // @match        https://scratch.mit.edu/projects/*
 // @match        http://scratch.mit.edu/projects/*
 // @downloadURL  https://github.com/7Snails/last-viewed-project/raw/master/lvp.user.js
 // @updateURL    https://github.com/7Snails/last-viewed-project/raw/master/lvp.user.js
+// @icon         https://raw.githubusercontent.com/7Snails/last-viewed-project/master/icon.png
 // ==/UserScript==
 
 var currentURL = window.location.href;

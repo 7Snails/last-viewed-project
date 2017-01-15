@@ -5,6 +5,9 @@
 // @description  Adds your latest viewed project to a studio
 // @author       @7Snails
 // @match        https://scratch.mit.edu/projects/*
+// @match        http://scratch.mit.edu/projects/*
+// @downloadURL  https://github.com/7Snails/last-viewed-project/raw/master/lvp.user.js
+// @updateURL    https://github.com/7Snails/last-viewed-project/raw/master/lvp.user.js
 // ==/UserScript==
 
 var URL = window.location.href;

@@ -11,9 +11,12 @@
 // ==/UserScript==
 
 var currentURL = window.location.href;
+var studio = localStorage.getItem("studioId");
 
-// Add your studio ID below
-var studio = "3708707";
+if (studio == null) {
+var studioPrompt = prompt('Write the string');
+localStorage.setItem("studioId", studioPrompt);
+var studio = studioPrompt;}
 
 if (currentURL.includes("scratch.mit.edu/projects/") === true) {
 var ID = currentURL.substring(33, currentURL.length - 1);

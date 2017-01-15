@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Latest Viewed Project
 // @namespace    http://scratch.mit.edu/user/7Snails
-// @version      1.2
+// @version      1.0
 // @description  Adds your latest viewed project to a studio
 // @author       @7Snails
 // @match        https://scratch.mit.edu/projects/*
@@ -13,8 +13,8 @@
 var currentURL = window.location.href;
 var studio = localStorage.getItem("studioId");
 
-if (studio == null) {
-var studioPrompt = prompt('Write the string');
+if (studio === null) {
+var studioPrompt = prompt('Put in the ID of your studio');
 localStorage.setItem("studioId", studioPrompt);
 var studio = studioPrompt;}
 

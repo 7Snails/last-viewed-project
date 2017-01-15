@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Latest Viewed Project
 // @namespace    http://scratch.mit.edu/user/7Snails
-// @version      1.0
+// @version      1.2
 // @description  Adds your latest viewed project to a studio
 // @author       @7Snails
 // @match        https://scratch.mit.edu/projects/*

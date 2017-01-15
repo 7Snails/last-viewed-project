@@ -11,7 +11,10 @@
 // ==/UserScript==
 
 var URL = window.location.href;
+
+// Add your studio ID below
 var studio = "3708707";
+
 if (URL.includes("scratch.mit.edu/projects/") === true) {
 var ID = URL.substring(33, URL.length - 1);
 $.ajax({

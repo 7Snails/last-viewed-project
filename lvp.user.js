@@ -10,13 +10,13 @@
 // @updateURL    https://github.com/7Snails/last-viewed-project/raw/master/lvp.user.js
 // ==/UserScript==
 
-var URL = window.location.href;
+var currentURL = window.location.href;
 
 // Add your studio ID below
 var studio = "3708707";
 
-if (URL.includes("scratch.mit.edu/projects/") === true) {
-var ID = URL.substring(33, URL.length - 1);
+if (currentURL.includes("scratch.mit.edu/projects/") === true) {
+var ID = currentURL.substring(33, currentURL.length - 1);
 $.ajax({
           type: "PUT",
           url: "https://scratch.mit.edu/site-api/projects/in/" + studio + "/add/?pks=" + ID
